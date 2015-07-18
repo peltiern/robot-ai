@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.lejos.nxt.ldt.LEJOS_LIBRARY_CONTAINER/pc"/>
+	<classpathentry kind="lib" path="/home/npeltier/Robot/sphinx4/jsapi-1.0-base.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/npeltier/Robot/Programme/programAB/lib/Ab.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/Robot/Programme/Phidget/phidget21.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/Robot/lib/shadow.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/Robot/lib/javaFlacEncoder-0.3.1.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/marytts-client-5.1.2-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/marytts-runtime-5.1.2-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/icu4j-54.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/marytts-lang-de-5.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/marytts-lang-en-5.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/marytts-lang-fr-5.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/marytts-lang-it-5.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/marytts-lang-ru-5.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/marytts-lang-sv-5.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/marytts-lang-te-5.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/marytts-lang-tr-5.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/voice-cmu-slt-hsmm-5.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/voice-enst-camille-5.1.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/voice-enst-camille-hsmm-5.1.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/voice-enst-dennys-hsmm-5.1.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/voice-upmc-jessica-5.1.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/voice-upmc-jessica-hsmm-5.1.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/voice-upmc-pierre-5.1.jar"/>
+	<classpathentry kind="lib" path="/home/npeltier/marytts-5.1.2/lib/voice-upmc-pierre-hsmm-5.1.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

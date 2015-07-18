@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	<appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
+		<param name="Threshold" value="DEBUG" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="robotAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="Threshold" value="DEBUG" />
+		<param name="File" value="/home/npeltier/Robot/Programme/logs/robot.log" />
+		<param name="MaxFileSize" value="100KB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p %c %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="organeParoleAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="Threshold" value="DEBUG" />
+		<param name="File" value="/home/npeltier/Robot/Programme/logs/organeParole.log" />
+		<param name="MaxFileSize" value="100KB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p [PAROLE] %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="capteurVocalAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="Threshold" value="DEBUG" />
+		<param name="File" value="/home/npeltier/Robot/Programme/logs/capteurVocal.log" />
+		<param name="MaxFileSize" value="100KB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p [CAPTEURVOCAL] %m%n" />
+		</layout>
+	</appender>
+	
+	<appender name="activiteAppender" class="org.apache.log4j.RollingFileAppender">
+		<param name="Threshold" value="DEBUG" />
+		<param name="File" value="/home/npeltier/Robot/Programme/logs/activites.log" />
+		<param name="MaxFileSize" value="100KB" />
+		<param name="MaxBackupIndex" value="10" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d [%t] %-5p [%F] %m%n" />
+		</layout>
+	</appender>
+
+	<logger name="fr.peltier" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="consoleAppender" />
+		<appender-ref ref="robotAppender" />
+	</logger>
+	
+	<logger name="fr.peltier.nicolas.robot.ai.organes.actionneurs.OrganeParole" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="organeParoleAppender" />
+	</logger>
+	
+	<logger name="fr.peltier.nicolas.robot.ai.organes.capteurs.CapteurVocal" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="capteurVocalAppender" />
+	</logger>
+	
+	<logger name="fr.peltier.nicolas.robot.ai.activites" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="activiteAppender" />
+	</logger>
+	
+	<root>
+		<level value="DEBUG" />
+		<appender-ref ref="consoleAppender" />
+	</root>
+</log4j:configuration>
