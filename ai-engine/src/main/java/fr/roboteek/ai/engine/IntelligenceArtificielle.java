@@ -203,6 +203,9 @@ public class IntelligenceArtificielle {
         String cheminRessources = "/home/npeltier/Robot/Programme/ai";
         final IntelligenceArtificielle ai = new IntelligenceArtificielle(cheminRessources);
         
+        
+        long debut = System.currentTimeMillis();
+        
         String test = "Je m'appelle Nicolas et j'aime la couleur bleu et mon ami s'appelle Adeline";
         System.out.println("MOI : " + test);
         String reponse = ai.action(test);
@@ -220,6 +223,9 @@ public class IntelligenceArtificielle {
         reponse = ai.action(test);
         System.out.println("AI : " + reponse);
         
+        long fin = System.currentTimeMillis();
+        
+        System.out.println("Temps = " + (fin - debut));
 
     }
 }
